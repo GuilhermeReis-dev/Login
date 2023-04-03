@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/login.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,37 +14,58 @@
     />
   </head>
   <body>
-    <div id="container-main" class="container-fluid img-fundo d-flex align-items-center justify-content-center">
-
+    <div
+      id="container-main"
+      class="container-fluid img-fundo d-flex align-items-center justify-content-center"
+    >
       <!-- Container main -->
       <main>
         <h1 id="titulo" class="text-center mb-5">Olá Novamente</h1>
 
         <!-- Formulario de login -->
         <form id="formLogin" class="bg-light rounded-3">
-
           <!-- Campo email -->
           <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="input-email" placeholder="email@example.com" autocomplete="username" required>
+            <input
+              type="email"
+              class="form-control"
+              id="input-email"
+              placeholder="email@example.com"
+              autocomplete="username"
+              required
+            />
             <label for="input-email" class="form-label">Email</label>
           </div>
 
           <!-- Campo Senha -->
           <div class="position-relative form-floating">
-              <input type="password" id="input-senha" class="form-control position-relative" placeholder="passwordExample" maxlength="30" autocomplete="current-password" required>
-              <div id="iconSenha"></div>
-              <div id="avisoCapsLock">CapsLock ativo</div>
+            <input
+              type="password"
+              id="input-senha"
+              class="form-control position-relative"
+              placeholder="passwordExample"
+              autocomplete="current-password"
+              required
+            />
+            <div id="iconSenha"></div>
+            <div id="avisoCapsLock">CapsLock ativo</div>
             <label for="input-senha" class="form-label">Senha</label>
           </div>
 
           <!-- BTN Submit -->
-          <button type="submit" class="btn btn-success w-100 mt-4 mb-2 text-center">Entrar</button>
-
+          <button
+            type="submit"
+            class="btn btn-success w-100 mt-4 mb-2 text-center"
+          >
+            Entrar
+          </button>
 
           <!-- Link para cadastro -->
-          <div>Não tem uma conta?  <a id="links" href="index.html">Cadastre-se</a></div>
+          <div>
+            Não tem uma conta? <a id="links" href="index.html">Cadastre-se</a>
+          </div>
           <div><a id="links" href="redefini.html">Esqueceu a senha?</a></div>
-        </form>       
+        </form>
       </main>
     </div>
 
@@ -52,9 +73,9 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
-    
+
     <!-- Bootstrap -->
-    <script 
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
