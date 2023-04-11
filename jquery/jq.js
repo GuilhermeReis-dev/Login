@@ -1,4 +1,3 @@
-// Mostrar e Esconder Senha 
 
 function verSenha () {
   $('#iconSenha').css('background-image', 'url(../Login/IMG/view.png)');
@@ -21,12 +20,11 @@ $("#iconSenha").click(() => {
   }
 });
 
-// CapsLock ativo ou desativado
+
 let senha = $("#input-senha");
 let caps = $("#avisoCapsLock");
 let capsLockAtivo = false;
 
-// Dificil Internet
 $(document).on("keydown", (e) => {
   if (e.originalEvent.getModifierState("CapsLock")) {
     capsLockAtivo = true;
